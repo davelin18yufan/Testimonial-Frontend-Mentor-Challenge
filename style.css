@@ -1,0 +1,155 @@
+body{
+    box-sizing:border-box;
+    font-family:'Barlow Semi Condensed', sans-serif;
+    font-weight:400;
+    font-size:13px;
+    background-color:hsl(210, 46%, 95%);
+    margin:0px;      
+    padding:0px;
+}
+
+
+#whole{
+    display:flex;
+    width:1000px;
+    height:550px;
+    margin:50px auto auto 50px;
+}
+
+#right{
+    background-color:white;
+    flex-basis:25%;
+    height:100%;
+    box-shadow: 10px 35px 36px -10px #B2ACA9;  
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+}
+
+#left{
+    display:flex;
+    flex-basis:75%;
+    height:100%;
+    flex-direction:column;
+    color:white;
+    justify-content: space-between;
+}
+
+#left-top, #left-bottom{
+    height:49%;
+    margin-top:0px;
+    
+}
+
+.grid{
+    display:flex;
+    margin-right:15px;
+    justify-content: start;
+}
+
+.roundborder{
+    border-radius:7px;
+}
+#left-top-left, #left-top-right, #left-bottom-left, #left-bottom-right{
+    flex-direction: column;
+    align-items:center;
+    padding:0px;
+}
+
+#left-top-left{
+    background: hsl(263, 55%, 52%) url("images/bg-pattern-quotation.svg ") no-repeat right 20% top;
+    width:72%;
+}
+
+#left-top-right{
+    background-color: hsl(217, 19%, 35%);
+    width:28%
+}
+
+#left-bottom-left{
+    background-color: white;
+    width:28%;
+    box-shadow: 10px 35px 36px -10px #B2ACA9;
+    color:black;
+}
+
+#left-bottom-right{
+    background-color:hsl(219, 29%, 14%);
+    width:72%;
+}
+
+
+#profile{
+    display:flex;
+    align-items: center;
+    justify-items: start;
+    margin:15px 0px;
+    height:15%;
+    width:100%;   
+}
+
+#right #profile{
+    margin-bottom:0px;
+}
+
+img{
+    margin-right:20px;
+    margin-left:15px;
+    border-radius: 50%;
+    object-fit: contain;
+    height:40px;
+}
+
+#left-top-left img{
+    border:2px solid hsl(0, 0%, 81%);
+}
+
+#left-bottom-right img{
+    border:2px solid hsl(263, 55%, 52%);
+}
+
+.status{
+    opacity:0.5;
+    margin:5px 0px 0px 0px;
+}
+
+.content p{
+    opacity: 0.7;
+    line-height:1.5em;
+}
+
+.content{
+    padding:0px 15px;
+}
+
+h4, h3{
+    margin:0px;
+}
+
+
+@media(max-width : 576px){
+    #whole{
+        width:auto;
+        height:auto;
+        flex-wrap:wrap;
+        padding:5% 3%;
+    }
+    
+    #left, #right, #left-top, #left-bottom, #left-top-left, #left-top-right, #left-bottom-left, #left-bottom-right{
+        flex-basis:100%;
+        height:auto;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .grid{
+        margin:20px 0px;
+    }
+    .content p {
+        margin-bottom: 40px;
+    }
+    
+
+    
+}
